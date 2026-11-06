@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Тег верификации Яндекс.Вебмастер -->
+    <meta name="yandex-verification" content="26c587d1ae99d870" />
+    
+    <title>Мой сайт — Главная страница</title>
+    <meta name="description" content="Пример простого сайта с подтверждением прав в Яндекс.Вебмастер">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #fc3f1d 0%, #ff6a3d 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        main {
+            padding: 60px 0;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fc3f1d;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #fc3f1d;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #d93416;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h3 {
+            color: #fc3f1d;
+            margin-bottom: 15px;
+        }
+        
+        footer {
+            background: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">🌐 МойСайт</div>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero" id="home">
+                <h1>Добро пожаловать на наш сайт!</h1>
+                <p>
+                    Это пример современного адаптивного сайта с интегрированным 
+                    тегом подтверждения прав в Яндекс.Вебмастер. 
+                    Сайт готов к индексации поисковыми системами.
+                </p>
+                <a href="#services" class="btn">Узнать больше</a>
+            </section>
+
+            <div class="cards" id="services">
+                <div class="card">
+                    <h3>🚀 Быстрый старт</h3>
+                    <p>Наш сайт работает быстро благодаря оптимизированному коду и современным технологиям.</p>
+                </div>
+                <div class="card">
+                    <h3>📱 Адаптивность</h3>
+                    <p>Сайт отлично отображается на любых устройствах — от смартфонов до больших мониторов.</p>
+                </div>
+                <div class="card">
+                    <h3>🔒 Безопасность</h3>
+                    <p>Используем только проверенные решения и следим за безопасностью данных.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <p>© 2025 МойСайт. Все права защищены.</p>
+            <p style="margin-top: 10px; font-size: 14px;">
+                Подтверждено в Яндекс.Вебмастер
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
